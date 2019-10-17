@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_uitextfield_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mkW-at-vaA">
+                                <rect key="frame" x="30" y="180" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WrG-6N-jNt">
+                                <rect key="frame" x="30" y="294" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9g-Nh-8VG">
+                                <rect key="frame" x="30" y="408" width="354" height="80"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="lTd-NT-LWd"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="d9g-Nh-8VG" firstAttribute="top" secondItem="WrG-6N-jNt" secondAttribute="bottom" constant="80" id="5aa-FF-jpT"/>
+                            <constraint firstItem="mkW-at-vaA" firstAttribute="trailing" secondItem="WrG-6N-jNt" secondAttribute="trailing" id="8nK-lS-sf2"/>
+                            <constraint firstItem="mkW-at-vaA" firstAttribute="leading" secondItem="WrG-6N-jNt" secondAttribute="leading" id="9sB-uD-2Lw"/>
+                            <constraint firstItem="WrG-6N-jNt" firstAttribute="leading" secondItem="d9g-Nh-8VG" secondAttribute="leading" id="AEm-aY-40Z"/>
+                            <constraint firstItem="WrG-6N-jNt" firstAttribute="trailing" secondItem="d9g-Nh-8VG" secondAttribute="trailing" id="B6j-aE-IzJ"/>
+                            <constraint firstItem="d9g-Nh-8VG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Fn7-yc-3Fk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d9g-Nh-8VG" secondAttribute="trailing" constant="30" id="Nvc-s4-joL"/>
+                            <constraint firstItem="WrG-6N-jNt" firstAttribute="top" secondItem="mkW-at-vaA" secondAttribute="bottom" constant="80" id="i2R-yp-1JH"/>
+                            <constraint firstItem="d9g-Nh-8VG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lJt-ua-J2B"/>
+                            <constraint firstItem="d9g-Nh-8VG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vRX-Av-hBk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="d9g-Nh-8VG" id="oV6-Ob-2qO"/>
+                        <outlet property="firstNameTextField" destination="WrG-6N-jNt" id="qdm-fW-Cff"/>
+                        <outlet property="lastNameTextField" destination="mkW-at-vaA" id="DvX-Xq-qRe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
